@@ -1,9 +1,5 @@
 # 2024
 
-## Versiones
-
-- El curso fue dictado el 17 de enero del 2024 en el marco de la [Escuela de Verano del CICS UDD](https://gobierno.udd.cl/noticias/2024/01/cics-realiza-escuela-de-verano-con-foco-en-ciencia-de-datos-e-interdisciplinariedad/).
-
 ## Alonso Astroza
 
 ![Alonso](../assets/images/alonso.png){ width="200", align=left }
@@ -23,3 +19,10 @@
 * :fontawesome-brands-github: [aastroza](https://github.com/aastroza)
 * :fontawesome-brands-linkedin: [aastrozacl](https://www.linkedin.com/in/aastrozacl/)
 * :fontawesome-brands-x-twitter: [aastroza](https://twitter.com/aastroza)
+
+### Versiones
+
+Dicté el curso en las siguientes ocasiones:
+
+- El 17 de enero del 2024 en el marco de la [Escuela de Verano del CICS UDD](https://gobierno.udd.cl/noticias/2024/01/cics-realiza-escuela-de-verano-con-foco-en-ciencia-de-datos-e-interdisciplinariedad/).
+- El 24 de mayo de 2024 en una sesión de trabajo del [CRiSS Lab](https://criss-lab.com/).
