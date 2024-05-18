@@ -4,7 +4,7 @@
 
 ## Un viaje en Github hacia la Ciencia de Datos Práctica y Colaborativa.
 
-<img src="../docs/assets/images/introduccion.png" alt="portada" width="600"/>
+<img src="assets/images/introduccion.png" alt="portada" width="600"/>
 
 El curso es una intensiva sesión de trabajo diseñada para transformar la manera en que los estudiantes abordan la **Ciencia de Datos**, pasando de proyectos solitarios en **Jupyter Notebook** a un enfoque más colaborativo y práctico, listo para integrarse en entornos de **software** reales.
 <br>
