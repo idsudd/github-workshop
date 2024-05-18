@@ -6,7 +6,7 @@
 
 *[Data Science in Context: Foundations, Challenges, Opportunities.](https://datascienceincontext.com/)*
 
-<img src="../assets/images/piramidePNG.PNG" alt="piramide" width="600"/>
+![piramide](../assets/images/piramidePNG.PNG){ width="600" }
 
 *[The AI Hierarchy of Needs (Mónica Rogati, Hackernoon)​](https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007)*
 
@@ -14,6 +14,6 @@
 
 *[Why most AI implementations fail, and what enterprises can do to beat the odds​.](https://venturebeat.com/ai/why-most-ai-implementations-fail-and-what-enterprises-can-do-to-beat-the-odds/)*
 
-<img src="../assets/images/mlops.PNG" alt="mlops" width="600"/>
+![mlops](../assets/images/mlops.PNG){ width="600" }
 
 *[MLOps: Why you Might Want to use Machine Learning](https://ml-ops.org/content/motivation)*
