@@ -1,13 +1,13 @@
 # Site information
-site_name: Course Title
-site_author: Jonh Doe
+site_name: Github for Data Science Workshop
+site_author: QAlonso Astroza Tagle
 site_description: >-
-  A very good course
+  A workshop to learn how to use Github for Data Science projects.
 
 
 # Repository
-repo_name: user/repository-name
-repo_url: https://github.com/user/repository-name
+repo_name: idsudd/github-workshop
+repo_url: https://github.com/idsudd/github-workshop
 
 
 # Configuration
@@ -30,16 +30,16 @@ theme:
 
 
 # Copyright
-copyright: Copyright &copy; 2024 John Doe.
+copyright: Copyright &copy; 2024 Instituto de Data Science, Facultad de Ingeniería, Universidad del Desarrollo.
 
 # Additional configuration
 extra:
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: G-93GNCVX8RQ
   social:
     - icon: fontawesome/solid/paper-plane
-      link: mailto:johndoe@mail.com
+      link: mailto:alonsoastroza@udd.cl
 
 markdown_extensions:
   - attr_list
