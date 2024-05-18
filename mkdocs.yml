@@ -62,10 +62,15 @@ plugins:
   
 nav:
   - Home: index.md
-  - Getting Started:
+  - Bienvenida:
       - Welcome to the course: welcome.md
-  - Lectures:
-      - lectures/index.md
+  - Contenido:
+      - content/index.md
+      - Contexto: content/context.md
+      - Desafíos: content/challenges.md
+      - Cookiecutter: content/cookiecutter.md
+      - Git: content/git.md
+      - Próximos pasos: content/next-steps.md
   - Material:
     - material/index.md
   - Cookbook:
