@@ -1,9 +1,50 @@
-# Material
+!!! note
+
+    I've led this short workshop as part of Summer School of [UDD CICS](https://complejidadsocial.udd.cl/). I will soon compile the material here.
+
+# [Workshop] Orbitar Jupyter y Aterrizar en la Tierra: un viaje en Github hacia la Ciencia de Datos Práctica y Colaborativa.
+
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/introduccion.png?raw=true" alt="portada" width="600"/>
+
+## Resumen
+
+El curso es una intensiva sesión de trabajo diseñada para transformar la manera en que los estudiantes abordan la Ciencia de Datos: pasando de proyectos solitarios en Jupyter Notebook a un enfoque más colaborativo y práctico, listo para integrarse en entornos de software reales.
+
+Se comienza con una introducción rápida a la Ciencia de Datos, enfatizando la importancia de estructuras de proyectos estandarizadas. Se explorará cómo Jupyter puede ser la puerta de entrada para análisis complejos, experimentación y desarrollo de productos de datos. 
+
+Luego se aborda cómo estructurar proyectos de Ciencia de Datos con metodologías estandarizadas como Cookiecutter para asegurar que sean mantenibles, replicables y escalables, adecuados para colaboración y uso en entornos de software real. No sólo se pondrá foco en el código, sino también en como trabajar con datos y modelos de machine learning.
+
+A continuación, se exploran las tecnologías Git/GitHub, herramientas cruciales para el trabajo colaborativo. Los estudiantes aprenden sobre control de versiones (crear, clonar, commit, push, pull, branches), colaboración efectiva y la automatización de flujos de trabajo (github actions).
+
+También se introducen temas clave para generar proyectos estructurados y listos para ser compartidos o desplegados, tales como entornos virtuales, devops, integración continua, colaboración open source, templates y contenedores, con el objetivo de establecer un camino de aprendizaje sugerido para el futuro.
+
+## Requisitos
+
+* Conocimiento básico de [Python](https://realpython.com/tutorials/basics/).
+* Instalación funcional del software [Anaconda](https://www.anaconda.com/download).
+* Una cuenta de [GitHub](https://github.com/).
+
+## Material
+
+* [Github Repositories List](https://github.com/stars/aastroza/lists/curso-navegar-jupyter-y-github)
+* [Template: Introduccion a Github](https://github.com/aastroza/introduccion-a-github)
+* [Template: IDS Cookiecutter](https://github.com/aastroza/cookiecutter-ids)
+* [Hands-On ML](https://github.com/aastroza/handson-ml3-cookiecutter)
 
 ## Introduccion
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pBy1zgt0XPc?si=TDJQufznmZ8EQ48R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+## Profesor
+
+* Subdirector de Alianzas con la Industria @  [Instituto de Ciencia de Datos, Universidad del Desarrollo](https://ingenieria.udd.cl/persona/alonso-astroza-tagle/).
+* Consultor Independiente: [GeoVictoria](https://www.geovictoria.com) - [Defontana](https://www.defontana.com) - [Discolab](https://www.discolab.cl) - [Subconscious.ai](https://www.subconscious.ai/).
+* Profesor en el [Magíster de Data Science @ Universidad del Desarrollo](https://ingenieria.udd.cl/postgrado/magister-en-data-science/profesores/).
+* Ingeniero Eléctrico @ Universidad de Chile.
+
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/companies.PNG?raw=true" alt="companies" width="600"/>
+
+*Empresas con las que he trabajado en la construcción de algún Producto de Datos*
 
 ## Ciencia de Datos
 
@@ -11,7 +52,7 @@
 
 *[Data Science in Context: Foundations, Challenges, Opportunities.](https://datascienceincontext.com/)*
 
-<img src="../assets/images/piramidePNG.PNG" alt="piramide" width="600"/>
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/piramidePNG.PNG?raw=true" alt="piramide" width="600"/>
 
 *[The AI Hierarchy of Needs (Mónica Rogati, Hackernoon)​](https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007)*
 
@@ -19,7 +60,7 @@
 
 *[Why most AI implementations fail, and what enterprises can do to beat the odds​.](https://venturebeat.com/ai/why-most-ai-implementations-fail-and-what-enterprises-can-do-to-beat-the-odds/)*
 
-<img src="../assets/images/mlops.PNG" alt="mlops" width="600"/>
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/mlops.PNG?raw=true" alt="mlops" width="600"/>
 
 *[MLOps: Why you Might Want to use Machine Learning](https://ml-ops.org/content/motivation)*
 
@@ -130,11 +171,11 @@ Aprenderemos Github usando este [Template](https://github.com/aastroza/introducc
 
 *[Git en Wikipedia](https://es.wikipedia.org/wiki/Git)*
 
-<img src="../assets/images/repos.PNG" alt="repos" width="600"/>
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/repos.PNG?raw=true" alt="repos" width="600"/>
 
 *[Norman Perrin, Introducción a Git y Github](https://github.com/NormanPerrin/introduccion-a-git-y-github)*
 
-<img src="../assets/images/repos.PNG" alt="git" width="600"/>
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/git.PNG?raw=true" alt="git" width="600"/>
 
 *[Understanding the GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)*
 
@@ -219,7 +260,7 @@ El uso de ramas y, en especial, de pull requests son técnicas ligeramente más 
 
 Cuando creas un nuevo repositorio git, este comienza con una única rama llamada main (o master). La rama main se considera como la *verdad central*. Crear ramas significa que te desviarás temporalmente para crear una nueva característica o una corrección a una antigua. Mientras tanto, alguien más puede trabajar en paralelo en su propia rama. Esto se conoce comúnmente como flujo de trabajo de rama de características.
 
-<img src="../assets/images/gitflow.PNG" alt="gitflow" width="600"/>
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/gitflow.PNG?raw=true" alt="gitflow" width="600"/>
 
 *[Git for Data Science](https://valohai.com/blog/git-for-data-science/)*
 
@@ -247,3 +288,44 @@ Hay dos opciones a nuestra disposición:
 - Puedes configurar un hook de pre-commit para git que borre las salidas automáticamente.
 
 Trataremos de implementar esta opción #2, ya que los pasos manuales que necesitas recordar están destinados a fallar eventualmente.
+
+## Los futuros destinos de este viaje
+
+### Open Source
+
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/open.PNG?raw=true" alt="deploy" width="600"/>
+
+*[GitHub Open Source](https://github.com/open-source)*
+
+[Making a pull request to an open-source project](https://github.com/gabrieldemarmiesse/getting_started_open_source)
+
+### Data Drift / Concept Drift
+
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/decayPNG.PNG?raw=true" alt="decay" width="600"/>
+
+*[Machine Learning in Production: Why You Should Care About Data and Concept Drift](https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb?gi=765431c69ef4)*
+
+### Devops/MLOps/LLMOps
+
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/deploy.PNG?raw=true" alt="deploy" width="600"/>
+
+*Advanced Model Deployments (Hannes Hapke y Catherine Nelson)*
+
+### Contenedores
+
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/modal.PNG?raw=true" alt="modal" width="600"/>
+
+*[Modal](https://modal.com/)*
+
+### Otras formas de contar esta historia
+
+<img src="https://github.com/aastroza/aastroza.github.io/blob/main/docs/github/nbdev.PNG?raw=true" alt="nbdev" width="600"/>
+
+*[Nbdev](https://nbdev.fast.ai/)*
+
+## Bibliografía
+
+- [Github Skills](https://skills.github.com/)
+- [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/)
+- [Git for Data Science](https://valohai.com/blog/git-for-data-science/)
+- [Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/)
