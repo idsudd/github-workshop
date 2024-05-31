@@ -9,5 +9,5 @@
 ## Ejemplos
 
 * [Proyecto: Survey-it](https://github.com/aastroza/survey-it)
+* [Template: Sitio del Curso](https://github.com/aastroza/course-template)
 * [Proyecto: Humor Chileno](https://github.com/aastroza/chilean-humor)
-* [Template: Sitio de un Curso](https://github.com/aastroza/course-template)

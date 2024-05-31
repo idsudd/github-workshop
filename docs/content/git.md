@@ -14,6 +14,19 @@ Aprenderemos Github usando este [Template](https://github.com/aastroza/introducc
 
 *[Understanding the GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)*
 
+## Por qué es importante
+
+
+Usar un software de control de versiones es invaluable para gestionar experimentos computacionales por tres razones:[^1]
+
+[^1]: Noble WS (2009) A Quick Guide to Organizing Computational Biology Projects. PLOS Computational Biology 5(7): e1000424. https://doi.org/10.1371/journal.pcbi.1000424
+
+- **Proporciona una forma de respaldo**. Aunque los sistemas informáticos de nuestra universidad se respaldan automáticamente cada noche, el programa de respaldo de mi laptop es más errático. Además, después de sobrescribir un archivo por error, a menudo es más fácil recuperar la versión de ayer desde Subversion que enviar un correo electrónico al administrador del sistema. De hecho, uno de mis estudiantes de posgrado me dijo que respiraba aliviado después de escribir svn commit, porque ese comando guarda una instantánea de su directorio de trabajo en el repositorio central.
+
+- El control de versiones proporciona un registro histórico que puede ser útil para rastrear errores o entender resultados antiguos. Típicamente, un script o programa evolucionará a lo largo del curso de un proyecto. En lugar de almacenar muchas copias del script con nombres ligeramente diferentes, confío en el sistema de control de versiones para llevar un seguimiento de esas versiones. Si necesito reproducir exactamente un experimento que realicé hace tres meses, puedo usar el software de control de versiones para obtener una copia del estado de mi proyecto en ese momento. Cabe destacar que la mayoría del software de control de versiones también puede asignar una "etiqueta" lógica a un estado particular del repositorio, lo que permite recuperar ese estado fácilmente más tarde.
+
+- El control de versiones es invaluable para proyectos colaborativos. El repositorio permite que los colaboradores trabajen simultáneamente en una colección de archivos, incluidos scripts, documentación o un borrador de manuscrito. Si dos personas editan el mismo archivo en paralelo, el software de control de versiones fusionará automáticamente las dos versiones y señalará las líneas que fueron editadas por ambas personas. No es raro que, en las horas previas a una fecha límite inminente, hable por teléfono con un colaborador remoto mientras ambos editamos el mismo documento, registrando los cambios cada pocos minutos.
+
 ## Consejos
 
 Algunos tips de [Git for Data Science](https://valohai.com/blog/git-for-data-science/):
