@@ -10,4 +10,4 @@
 
 <br>
 <br>
-[:fontawesome-solid-thumbtack: Clases](material/index.md){ .md-button }
+[:fontawesome-solid-thumbtack: Clases](content/index.md){ .md-button }

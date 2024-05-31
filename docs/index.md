@@ -9,4 +9,4 @@
 El curso es una intensiva sesión de trabajo diseñada para transformar la manera en que los estudiantes abordan la **Ciencia de Datos**, pasando de proyectos solitarios en **Jupyter Notebook** a un enfoque más colaborativo y práctico, listo para integrarse en entornos de **software** reales.
 <br>
 <br>
-[:fontawesome-solid-bolt: Comenzando](welcome.md){ .md-button .md-button--primary } [:fontawesome-solid-thumbtack: Clases](material/index.md){ .md-button }
+[:fontawesome-solid-bolt: Comenzando](welcome.md){ .md-button .md-button--primary } [:fontawesome-solid-thumbtack: Clases](content/index.md){ .md-button }
