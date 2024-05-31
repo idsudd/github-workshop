@@ -6,11 +6,11 @@ Aprenderemos Github usando este [Template](https://github.com/aastroza/introducc
 
 *[Git en Wikipedia](https://es.wikipedia.org/wiki/Git)*
 
-<img src="../assets/images/repos.PNG" alt="repos" width="600"/>
+![repos](../assets/images/repos.PNG){ width="600" }
 
 *[Norman Perrin, Introducción a Git y Github](https://github.com/NormanPerrin/introduccion-a-git-y-github)*
 
-<img src="../assets/images/repos.PNG" alt="git" width="600"/>
+![git](../assets/images/repos.PNG){ width="600" }
 
 *[Understanding the GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)*
 
@@ -97,7 +97,7 @@ El uso de ramas y, en especial, de pull requests son técnicas ligeramente más 
 
 Cuando creas un nuevo repositorio git, este comienza con una única rama llamada main (o master). La rama main se considera como la *verdad central*. Crear ramas significa que te desviarás temporalmente para crear una nueva característica o una corrección a una antigua. Mientras tanto, alguien más puede trabajar en paralelo en su propia rama. Esto se conoce comúnmente como flujo de trabajo de rama de características.
 
-<img src="../assets/images/gitflow.PNG" alt="gitflow" width="600"/>
+![gitflow](../assets/images/gitflow.PNG){ width="600" }
 
 *[Git for Data Science](https://valohai.com/blog/git-for-data-science/)*
 

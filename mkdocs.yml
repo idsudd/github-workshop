@@ -72,8 +72,6 @@ nav:
       - Git: content/git.md
       - Próximos pasos: content/next-steps.md
   - Material:
-    - material/index.md
-  - Cookbook:
-    - cookbook/index.md    
+    - material/index.md 
   - Instructor:
     - instructor/index.md
