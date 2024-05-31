@@ -10,7 +10,7 @@ Aprenderemos Github usando este [Template](https://github.com/aastroza/introducc
 
 *[Norman Perrin, Introducción a Git y Github](https://github.com/NormanPerrin/introduccion-a-git-y-github)*
 
-![git](../assets/images/repos.PNG){ width="600" }
+![git](../assets/images/git.PNG){ width="600" }
 
 *[Understanding the GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)*
 
