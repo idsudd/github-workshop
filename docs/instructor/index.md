@@ -25,4 +25,4 @@
 Dicté el curso en las siguientes ocasiones:
 
 - El 17 de enero del 2024 en el marco de la [Escuela de Verano del CICS UDD](https://gobierno.udd.cl/noticias/2024/01/cics-realiza-escuela-de-verano-con-foco-en-ciencia-de-datos-e-interdisciplinariedad/).
-- El 24 de mayo de 2024 en una sesión de trabajo del [CRiSS Lab](https://criss-lab.com/).
+- El 31 de mayo de 2024 en una sesión de trabajo del [CRiSS Lab](https://criss-lab.com/).
