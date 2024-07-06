@@ -63,3 +63,26 @@ Está basada en [Cookiecutter Data Science](https://drivendata.github.io/cookiec
 * Se sugiere seguir una convención para nombrar los archivos: `<step>-<ghuser>-<description>.ipynb`. Ejemplo: `03-aastroza-visualize-distributions.ipynb`
 * Hay que hacer refactorizaciones de las partes claves. No se debe repetir el código de la misma tarea en diferentes notebooks. Si el código es útil, escribanlo siempre a la carpeta `src`.
 * Por ejemplo: si es una tarea de preprocesamiento de datos, hay que poner el pipeline en `src/data/make_dataset.py` y cargar datos desde `data/interim`. 
+
+## Refactorizando código en módulos compartidos
+
+A medida que avance tu proyecto, querrás refactorizar tu código de manera que sea fácil de compartir entre notebooks y scripts. Recomendamos crear un módulo en la carpeta {{ src.module_name }} que contenga el código que usas en tu proyecto. Esta es una buena forma de asegurarte de que puedas usar el mismo código en varios lugares sin tener que copiar y pegar.
+
+Dado que la estructura predeterminada es un paquete de Python y está instalado por defecto, puedes hacer lo siguiente para que ese código esté disponible dentro de un cuaderno de Jupyter.
+
+Primero, recomendamos activar la extensión autoreload. Esto hará que Jupyter siempre vuelva al código fuente del módulo en lugar de almacenarlo en caché en la memoria. Si tu cuaderno no refleja los últimos cambios realizados en un archivo .py, intenta reiniciar el kernel y asegúrate de que autoreload esté activado. Agregamos una celda al inicio del notebook con lo siguiente:
+
+```python
+%load_ext autoreload
+%autoreload 2
+```
+
+Ahora todo tu código debería ser importable. Podrías usarlo importándolo de la siguiente manera:
+
+```python
+from src.data import make_dataset
+
+data = make_dataset()
+```
+
+Ahora debería ser fácil hacer cualquier refactorización que necesites para que tu código sea más modular y reutilizable.
