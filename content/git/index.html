@@ -1,0 +1,1096 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A workshop to learn how to use Github for Data Science projects.">
+      
+      
+        <meta name="author" content="QAlonso Astroza Tagle">
+      
+      
+      
+        <link rel="prev" href="../cookiecutter/">
+      
+      
+        <link rel="next" href="../next-steps/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+    
+    
+      
+        <title>Git - Github for Data Science Workshop</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-93GNCVX8RQ"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-93GNCVX8RQ",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-93GNCVX8RQ",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Git - Github for Data Science Workshop" >
+      
+        <meta  property="og:description"  content="A workshop to learn how to use Github for Data Science projects." >
+      
+        <meta  property="og:image"  content="./assets/images/social/content/git.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="None" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Git - Github for Data Science Workshop" >
+      
+        <meta  name="twitter:description"  content="A workshop to learn how to use Github for Data Science projects." >
+      
+        <meta  name="twitter:image"  content="./assets/images/social/content/git.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#git" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Github for Data Science Workshop" class="md-header__button md-logo" aria-label="Github for Data Science Workshop" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 23.3-.6-.5c-2-1.9-3.4-3.1-3.4-4.6 0-1.2 1-2.2 2.2-2.2.7 0 1.4.3 1.8.8.4-.5 1.1-.8 1.8-.8 1.2 0 2.2.9 2.2 2.2 0 1.5-1.4 2.7-3.4 4.6l-.6.5M18 2c1.1 0 2 .9 2 2v9.08L19 13l-1 .08V4h-5v8l-2.5-2.25L8 12V4H6v16h7.08c.12.72.37 1.39.72 2H6c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h12Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Github for Data Science Workshop
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Git
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/idsudd/github-workshop" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    idsudd/github-workshop
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../welcome/" class="md-tabs__link">
+          
+  
+  Bienvenida
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="../" class="md-tabs__link">
+        
+  
+    
+  
+  Contenido
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../material/" class="md-tabs__link">
+        
+  
+    
+  
+  Material
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../video/" class="md-tabs__link">
+        
+  
+    
+  
+  Video
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../instructor/" class="md-tabs__link">
+        
+  
+    
+  
+  Instructor
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Github for Data Science Workshop" class="md-nav__button md-logo" aria-label="Github for Data Science Workshop" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 23.3-.6-.5c-2-1.9-3.4-3.1-3.4-4.6 0-1.2 1-2.2 2.2-2.2.7 0 1.4.3 1.8.8.4-.5 1.1-.8 1.8-.8 1.2 0 2.2.9 2.2 2.2 0 1.5-1.4 2.7-3.4 4.6l-.6.5M18 2c1.1 0 2 .9 2 2v9.08L19 13l-1 .08V4h-5v8l-2.5-2.25L8 12V4H6v16h7.08c.12.72.37 1.39.72 2H6c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h12Z"/></svg>
+
+    </a>
+    Github for Data Science Workshop
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/idsudd/github-workshop" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    idsudd/github-workshop
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bienvenida
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Bienvenida
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../welcome/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to the course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Contenido
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Contenido
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../context/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contexto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../challenges/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Desafíos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cookiecutter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cookiecutter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-es-importante" class="md-nav__link">
+    <span class="md-ellipsis">
+      Por qué es importante
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consejos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consejos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consejos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-agregues-los-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      No agregues los datasets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-agregues-tus-passwordskeys" class="md-nav__link">
+    <span class="md-ellipsis">
+      No agregues tus passwords/keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#realiza-commits-pequenos-con-descripciones-claras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Realiza commits pequeños con descripciones claras
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-le-tengas-miedo-a-las-ramas-y-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      No le tengas miedo a las ramas y pull requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcional-no-agregues-los-outputs-de-los-jupyter-notebooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Opcional] No agregues los outputs de los Jupyter Notebooks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../next-steps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Próximos pasos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../material/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Material
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../instructor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instructor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-es-importante" class="md-nav__link">
+    <span class="md-ellipsis">
+      Por qué es importante
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consejos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consejos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consejos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-agregues-los-datasets" class="md-nav__link">
+    <span class="md-ellipsis">
+      No agregues los datasets
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-agregues-tus-passwordskeys" class="md-nav__link">
+    <span class="md-ellipsis">
+      No agregues tus passwords/keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#realiza-commits-pequenos-con-descripciones-claras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Realiza commits pequeños con descripciones claras
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-le-tengas-miedo-a-las-ramas-y-pull-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      No le tengas miedo a las ramas y pull requests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opcional-no-agregues-los-outputs-de-los-jupyter-notebooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      [Opcional] No agregues los outputs de los Jupyter Notebooks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="git">Git</h1>
+<p>Aprenderemos Github usando este <a href="https://github.com/aastroza/introduccion-a-github">Template</a>. Hay que abrir este enlace y seguir las instrucciones.</p>
+<blockquote>
+<p>Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente. Su propósito es llevar registro de los cambios en archivos de computadora incluyendo coordinar el trabajo que varias personas realizan sobre archivos compartidos en un repositorio de código.</p>
+</blockquote>
+<p><em><a href="https://es.wikipedia.org/wiki/Git">Git en Wikipedia</a></em></p>
+<p><img alt="repos" src="../../assets/images/repos.PNG" width="600" /></p>
+<p><em><a href="https://github.com/NormanPerrin/introduccion-a-git-y-github">Norman Perrin, Introducción a Git y Github</a></em></p>
+<p><img alt="git" src="../../assets/images/git.PNG" width="600" /></p>
+<p><em><a href="https://docs.github.com/en/get-started/quickstart/github-flow">Understanding the GitHub flow</a></em></p>
+<h2 id="por-que-es-importante">Por qué es importante</h2>
+<p>Usar un software de control de versiones es invaluable para gestionar experimentos computacionales por tres razones:<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<ul>
+<li>
+<p><strong>Proporciona una forma de respaldo</strong>. </p>
+</li>
+<li>
+<p><strong>Proporciona un registro histórico</strong> que puede ser útil para rastrear errores o entender resultados antiguos. Típicamente, un script o programa evolucionará a lo largo del curso de un proyecto. En lugar de almacenar muchas copias del script con nombres ligeramente diferentes, se confía en el sistema de control de versiones para llevar un seguimiento de esas versiones. Si se necesita reproducir exactamente un experimento que se realizó hace tres meses, se puede usar el control de versiones para obtener una copia del estado del proyecto en ese momento.</p>
+</li>
+<li>
+<p><strong>Es invaluable para proyectos colaborativos</strong>. El repositorio permite que los colaboradores trabajen simultáneamente en una colección de archivos, incluidos scripts, documentación o un borrador de manuscrito.</p>
+</li>
+</ul>
+<h2 id="consejos">Consejos</h2>
+<p>Algunos tips de <a href="https://valohai.com/blog/git-for-data-science/">Git for Data Science</a>:</p>
+<h3 id="no-agregues-los-datasets">No agregues los datasets</h3>
+<p>Git es un sistema de control de versiones diseñado para servir a los desarrolladores de software. Cuenta con excelentes herramientas para manejar el código fuente y otros contenidos relacionados como configuración, dependencias, documentación. No está pensado para datos de entrenamiento. Punto. Git es solo para código.</p>
+<p>En el desarrollo de software, el código es rey y todo lo demás sirve al código. En la ciencia de datos, esto ya no es el caso y existe una dualidad entre datos y código. No tiene sentido que el código dependa de los datos tanto como no tiene sentido que los datos dependan del código. Deben estar desacoplados y aquí es donde el modelo de desarrollo de software centrado en el código te falla. Git no debería ser el punto central de verdad para un proyecto de ciencia de datos.</p>
+<p>Hay extensiones como LFS que se refieren a conjuntos de datos externos desde un repositorio git. Aunque cumplen un propósito y resuelven algunos de los límites técnicos (tamaño, velocidad), no resuelven el problema central de una mentalidad de desarrollo de software centrada en el código arraigada en git.</p>
+<p>Siempre tendrás conjuntos de datos flotando en tu directorio local, sin embargo. Es bastante fácil agregarlos accidentalmente al escenario y hacer un commit de ellos si no tienes cuidado. La forma correcta de asegurarte de que no necesitas preocuparte por los conjuntos de datos con git es usar el archivo de configuración .gitignore. Agrega tus conjuntos de datos o la carpeta de datos a la configuración y no mires atrás.</p>
+<p>Ejemplo:</p>
+<div class="highlight"><pre><span></span><code># ignore archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# ignore dataset folder and subfolders
+data/
+</code></pre></div>
+<h3 id="no-agregues-tus-passwordskeys">No agregues tus passwords/keys</h3>
+<p>Esto debería ser obvio, pero los constantes errores en el mundo real nos demuestran que no lo es. No importa si el repositorio es privado. En ninguna circunstancia se debe hacer un commit de ningún nombre de usuario, contraseña, token de API, código clave, certificados TLS, o cualquier otro dato sensible en git.</p>
+<p>Incluso los repositorios privados son accesibles por múltiples cuentas y también se clonan en múltiples máquinas locales. Esto le da al hipotético atacante exponencialmente más objetivos. Recuerda que los repositorios privados también pueden volverse públicos en algún momento.</p>
+<p>Desacopla tus secretos de tu código y pásalos usando el entorno en su lugar. Para Python, puedes usar el común archivo .env, que contiene las variables de entorno, y el archivo .gitignore, que asegura que el archivo .env no se envíe al repositorio remoto de git. Es una buena idea también proporcionar el .env.template para que otros sepan qué tipo de variables de entorno espera el sistema.</p>
+<p><strong>.env:</strong></p>
+<p><code>API_TOKEN=98789fsda789a89sdafsa9f87sda98f7sda89f7</code></p>
+<p><strong>.env.template:</strong></p>
+<p><code>API_TOKEN=</code></p>
+<p><strong>.gitignore:</strong></p>
+<div class="highlight"><pre><span></span><code>.env
+</code></pre></div>
+<p><strong>hello.py:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+<span class="n">load_dotenv</span><span class="p">()</span>
+<span class="n">api_token</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;API_TOKEN&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>Esto todavía requiere algo de copiar y pegar manualmente para cualquiera que clone el repositorio por primera vez. Para una configuración más avanzada, hay herramientas encriptadas y con acceso restringido que pueden compartir secretos a través del entorno, como <a href="https://www.doppler.com/">Doppler</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si ya has enviado tus secretos al repositorio remoto, no intentes arreglar la situación simplemente borrándolos. Es demasiado tarde ya que git está diseñado para ser inmutable. Una vez que el gato está fuera de la bolsa, la única estrategia válida es cambiar las contraseñas o desactivar los tokens.</p>
+</div>
+<h3 id="realiza-commits-pequenos-con-descripciones-claras">Realiza commits pequeños con descripciones claras</h3>
+<p>Los usuarios inexpertos a menudo caen en la trampa de hacer commits enormes con descripciones sin sentido. Una buena regla general para cualquier commit en git es que solo debe hacer una cosa. Arreglar un bug, no tres. Resolver un problema, no doce. Recuerda que los problemas a menudo pueden dividirse en partes más pequeñas también. Cuanto más pequeño puedas hacerlo, mejor.</p>
+<p>La razón por la que usas el control de versiones es para que otra persona pueda entender lo que ha sucedido en el pasado. Si tu commit arregla doce bugs y la descripción dice "Modelo arreglado", su valor es cercano a cero dos meses después. El commit solo debe hacer una cosa y solo una cosa. La descripción debe comunicar lo que esa cosa fue. No necesitas hacer descripciones extensas si los commits son pequeños. De hecho, ¡una descripción larga para un mensaje de commit implica que el commit es demasiado grande y deberías dividirlo en partes más pequeñas!</p>
+<p><strong>Ejemplo de un mal repositorio</strong></p>
+<p><img src="https://valohai.com/blog/git-for-data-science/bad-repo.png" alt="bad" width="600"/></p>
+<p><strong>Ejemplo de un buen repositorio</strong></p>
+<p><img src="https://valohai.com/blog/git-for-data-science/good-repo.png" alt="good" width="600"/></p>
+<h3 id="no-le-tengas-miedo-a-las-ramas-y-pull-requests">No le tengas miedo a las ramas y pull requests</h3>
+<p>El uso de ramas y, en especial, de pull requests son técnicas ligeramente más avanzadas y no son del agrado de todos, pero si tu proyecto de ciencia de datos está maduro, en producción y constantemente manejado por muchas personas diferentes, los pull requests podrían ser justo lo que falta en tu proceso.</p>
+<p>Cuando creas un nuevo repositorio git, este comienza con una única rama llamada main (o master). La rama main se considera como la <em>verdad central</em>. Crear ramas significa que te desviarás temporalmente para crear una nueva característica o una corrección a una antigua. Mientras tanto, alguien más puede trabajar en paralelo en su propia rama. Esto se conoce comúnmente como flujo de trabajo de rama de características.</p>
+<p><img alt="gitflow" src="../../assets/images/gitflow.PNG" width="600" /></p>
+<p><em><a href="https://valohai.com/blog/git-for-data-science/">Git for Data Science</a></em></p>
+<p>La idea con las ramas es eventualmente fusionarse de nuevo a la rama main y actualizar <em>la verdad central</em>. Aquí es donde entran en juego los pull requests. Al resto del mundo no le importan tus commits en tu propia rama, pero fusionarse a main es cuando tu rama se convierte en la última verdad. Ese es el momento de hacer un pull request.</p>
+<p>Los pull requests no son un concepto de git, sino de GitHub. Son una solicitud para hacer de tu rama la nueva verdad central. Mediante el pull request, otros usuarios revisarán tus cambios antes de que se les permita convertirse en la nueva verdad central. GitHub ofrece excelentes herramientas para hacer comentarios, sugerir modificaciones, señalar aprobaciones y finalmente aplicar la fusión automáticamente.</p>
+<h3 id="opcional-no-agregues-los-outputs-de-los-jupyter-notebooks">[Opcional] No agregues los outputs de los Jupyter Notebooks</h3>
+<p>Los notebooks son geniales porque te permiten no solo almacenar código, sino también los resultados de las celdas, como imágenes, gráficos y tablas. El problema surge cuando haces commit y push del notebook con sus salidas a git.</p>
+<p>La forma en que los notebooks serializan todas las imágenes, gráficos y tablas no es atractiva. En lugar de archivos separados, codifica todo como sintaxis JSON en el archivo .ipynb. Esto confunde a git.</p>
+<p>Git piensa que la sintaxis JSON son igual de importantes que tu código. Las tres líneas de código que cambiaste se mezclan con las tres mil líneas que se cambiaron en la sintaxis JSON. Intentar comparar las dos versiones se vuelve inútil debido a todo el ruido adicional.</p>
+<p><img src="https://valohai.com/blog/git-for-data-science/git_image_diff.png" alt="diff" width="600"/></p>
+<p><em><a href="https://blog.reviewnb.com/jupyter-version-control/">ReviewNB Blog</a></em></p>
+<p>Se vuelve aún más confuso si hemos cambiado algo de código después de que se generaron las salidas. Ahora el código y las salidas que están almacenadas en el control de versiones ya no coinciden.</p>
+<p>Hay dos opciones a nuestra disposición:</p>
+<ul>
+<li>Puedes borrar manualmente las salidas desde el menú principal (Celdas -&gt; Toda la Salida -&gt; Borrar) antes de crear tu commit en git.</li>
+<li>Puedes configurar un hook de pre-commit para git que borre las salidas automáticamente.</li>
+</ul>
+<p>Trataremos de implementar esta opción #2, ya que los pasos manuales que necesitas recordar están destinados a fallar eventualmente.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Noble WS (2009) A Quick Guide to Organizing Computational Biology Projects. PLOS Computational Biology 5(7): e1000424. https://doi.org/10.1371/journal.pcbi.1000424&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Instituto de Data Science, Facultad de Ingeniería, Universidad del Desarrollo.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:alonsoastroza@udd.cl" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.tabs", "navigation.sections", "announce.dismiss", "content.tabs.link", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
